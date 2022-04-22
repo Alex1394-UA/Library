@@ -26,6 +26,39 @@ $('.wrap').html(
 
 $('.dropdown-toggle').dropdown();
 
+$('#trigger').click(() => $('#trigger').createModal({
+    text: {
+        title: 'Modal title (JS)',
+        body: 'As Orthodox Christians around the world prepare to celebrate Easter, the Kremlin continues with its disinformation campaign, accusing Ukraine of planning provocations on the holiday.  By now, we all know Russia’s playbook. The Kremlin regularly accuses others of doing exactly what it plans to do itself.  If Russia’s leaders really cared about peace for the holidays, they would simply stop the killing and leave Ukraine.'
+    },
+    btns: {
+        count: 3,
+        settings: [
+            [
+                'Close',
+                ['btn-danger', 'mr-10'],
+                true
+            ],
+            [
+                'Зберегти зміни',
+                ['btn-success'],
+                false,
+                () => {
+                    alert('Данні збережені');
+                }
+            ],
+            [
+                'Нова кнопка',
+                ['btn-warning', 'ml-10'],
+                false,
+                () => {
+                    alert('Привіт, Світ!');
+                }
+            ]
+        ]
+    }
+}));
+
 
 
 
