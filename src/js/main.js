@@ -12,19 +12,20 @@ $('button').eq(2).on('click', () => {
     $('.w-500').fadeToggle(800);
 });
 
-$('.wrap').html(
+// формирование элемента dropdown средствами JS
+/* $('.wrap').html(
     `
     <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">Dropdown button</button>
             <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
-                <a href="#" class="dropdown-item">Action</a>
-                <a href="#" class="dropdown-item">Baction</a>
-                <a href="#" class="dropdown-item">Shmaction</a>
+                <a href="#" class="dropdown-item">Action-JS</a>
+                <a href="#" class="dropdown-item">Baction-JS</a>
+                <a href="#" class="dropdown-item">Shmaction-JS</a>
             </div>
         </div>`
 );
 
-$('.dropdown-toggle').dropdown();
+$('.dropdown-toggle').dropdown(); */
 
 $('#trigger').click(() => $('#trigger').createModal({
     text: {
