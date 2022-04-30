@@ -60,6 +60,19 @@ $('#trigger').click(() => $('#trigger').createModal({
     }
 }));
 
+// tests for services
+/* $().get('https://jsonplaceholder.typicode.com/todos/1')
+    .then(res => console.log(res)); */
+
+/* $().post('https://jsonplaceholder.typicode.com/posts/', {
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'foo',
+      body: 'bar',
+      userId: 1,
+    })
+  })
+  .then(res => console.log(res)); */
 
 
 
